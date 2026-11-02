@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aurelia Grand Resort — luxury stays, thoughtfully designed.">
+  <title>Aurelia Grand Resort | Luxury Stays</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="announcement">A QUIETER KIND OF LUXURY <span>✦</span> YOUR PRIVATE ESCAPE AWAITS</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Aurelia Grand Resort home">
+      <span class="brand-mark">A</span><span><strong>AURELIA</strong><small>GRAND RESORT</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a class="active" href="#home">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="rooms.html">Rooms & Suites</a>
+      <a href="#facilities">Experiences</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-login" href="login.html" id="navAccount">Sign In ↗</a>
+      <a class="button button-gold nav-book" href="booking.html">Book a Stay</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">A PRIVATE SANCTUARY · EST. 1998</p>
+        <h1>Find your<br><em>own stillness.</em></h1>
+        <p class="hero-copy">A considered retreat where warm hospitality, natural beauty and understated luxury meet.
+        </p>
+        <div class="hero-actions">
+          <a href="rooms.html" class="button button-gold">Explore the rooms <span>↗</span></a>
+          <a href="#story" class="text-link light-link">Discover Aurelia <span>↓</span></a>
+        </div>
+      </div>
+      <div class="hero-caption"><span>01 / 04</span><span>THE ART OF SLOW LIVING</span></div>
+    </section>
+
+    <section class="booking-strip">
+      <div><label for="quickCheckIn">CHECK IN</label><input type="date" id="quickCheckIn"></div>
+      <div><label for="quickCheckOut">CHECK OUT</label><input type="date" id="quickCheckOut"></div>
+      <div><label for="quickGuests">GUESTS</label><select id="quickGuests">
+          <option>1 Guest</option>
+          <option selected>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4 Guests</option>
+          <option>5 Guests</option>
+          <option>6 Guests</option>
+        </select></div>
+      <a href="booking.html" class="button button-dark" id="quickBook">Check availability <span>→</span></a>
+    </section>
+
+    <section class="section intro-section" id="story">
+      <div class="section-kicker">WELCOME TO AURELIA <span>✦</span> EST. 1998</div>
+      <div class="intro-grid">
+        <div>
+          <h2>Luxury is not<br>more. It is <em>meaning.</em></h2>
+        </div>
+        <div class="intro-copy">
+          <p>Set aside the rush of everyday life. At Aurelia, every detail is an invitation to pause — from sunlit
+            suites and thoughtful service to slow mornings that turn into golden afternoons.</p><a
+            class="text-link dark-link" href="about.html">Our philosophy <span>↗</span></a>
+        </div>
+      </div>
+      <div class="image-mosaic">
+        <div class="mosaic-large"><img
+            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=85"
+            alt="Elegant resort bedroom"><span>01 — REST, REIMAGINED</span></div>
+        <div class="mosaic-small"><img
+            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=85"
+            alt="Resort swimming pool"><span>02 — MOMENTS TO KEEP</span></div>
+      </div>
+    </section>
+
+    <section class="section rooms-section" id="roomsPreview">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR PLACE IN THE WORLD</p>
+          <h2>Rooms & <em>suites.</em></h2>
+        </div><a class="text-link dark-link" href="rooms.html">View all rooms ↗</a>
+      </div>
+      <div class="room-grid">
+        <article class="room-card"><a href="rooms.html#deluxe"><img
+              src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85"
+              alt="Deluxe room"></a>
+          <div class="room-card-info">
+            <div>
+              <h3>Deluxe Retreat</h3>
+              <p>Garden view · King bed</p>
+            </div><strong>₹6,500 <small>/ night</small></strong>
+          </div><a href="booking.html?room=Deluxe%20Retreat" class="room-link">Reserve this room ↗</a>
+        </article>
+        <article class="room-card"><a href="rooms.html#premier"><img
+              src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=85"
+              alt="Premier suite"></a>
+          <div class="room-card-info">
+            <div>
+              <h3>Premier Suite</h3>
+              <p>Pool view · King bed</p>
+            </div><strong>₹9,800 <small>/ night</small></strong>
+          </div><a href="booking.html?room=Premier%20Suite" class="room-link">Reserve this room ↗</a>
+        </article>
+        <article class="room-card"><a href="rooms.html#villa"><img
+              src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=900&q=85"
+              alt="Private luxury villa"></a>
+          <div class="room-card-info">
+            <div>
+              <h3>Signature Villa</h3>
+              <p>Private plunge pool · 2 bedrooms</p>
+            </div><strong>₹18,500 <small>/ night</small></strong>
+          </div><a href="booking.html?room=Signature%20Villa" class="room-link">Reserve this room ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience-band" id="facilities">
+      <div class="experience-image"></div>
+      <div class="experience-copy">
+        <p class="eyebrow light">THE AURELIA EXPERIENCE</p>
+        <h2>Time well<br><em>spent.</em></h2>
+        <p>Make space for the things that restore you. From the first coffee to the last light, our experiences are
+          designed around you.</p>
+        <ul>
+          <li><span>01</span> Infinity pool & cabanas</li>
+          <li><span>02</span> Spa and wellness rituals</li>
+          <li><span>03</span> Farm-to-table dining</li>
+          <li><span>04</span> Curated local excursions</li>
+        </ul><a class="button button-outline" href="facilities.html">Explore experiences ↗</a>
+      </div>
+    </section>
+
+    <section class="quote-section"><span class="quote-mark">“</span>
+      <blockquote>Some places stay with you long after<br>you have returned home.</blockquote>
+      <p>THE AURELIA PROMISE</p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">LET US HELP YOU PLAN</p>
+        <h2>Your next chapter<br>starts <em>here.</em></h2>
+      </div>
+      <div class="contact-details">
+        <p>Have a question or a special request? Our team would be delighted to help you plan a stay worth remembering.
+        </p><a href="mailto:stay@aureliagrand.example" class="text-link dark-link">stay@aureliagrand.example ↗</a>
+        <p class="muted">+91 98765 43210 · Open daily, 9 AM–8 PM</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span
+        class="brand-mark">A</span><span><strong>AURELIA</strong><small>GRAND RESORT</small></span></a>
+    <p>AN ESCAPE, BEAUTIFULLY CONSIDERED.</p>
+    <div><a href="rooms.html">Rooms</a><a href="booking.html">Bookings</a><a href="login.html">Account</a></div><small>©
+      <span id="year"></span> Aurelia Grand Resort · BCA II Front-End Project</small>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-effects.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

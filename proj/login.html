@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Aurelia</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-body">
+    <div class="auth-visual"><a class="brand brand-light" href="index.html"><span
+                class="brand-mark">A</span><span><strong>AURELIA</strong><small>GRAND RESORT</small></span></a>
+        <div>
+            <p class="eyebrow light">WELCOME BACK</p>
+            <h1>Your next<br><em>escape awaits.</em></h1>
+            <p>Pick up where the daydream left off.</p>
+        </div><span class="auth-caption">AURELIA · AN ESCAPE, BEAUTIFULLY CONSIDERED</span>
+    </div>
+    <main class="auth-content"><a class="back-link" href="index.html">← Back to home</a>
+        <div class="auth-form-wrap">
+            <p class="eyebrow">AURELIA MEMBERS</p>
+            <h2>Good to see<br><em>you again.</em></h2>
+            <p class="auth-subtitle">Sign in to continue to your account.</p>
+            <form id="loginForm" novalidate>
+                <div class="field"><label for="loginId">Username or email *</label><input id="loginId" required
+                        autocomplete="username" placeholder="Enter username or email"><small class="error"></small>
+                </div>
+                <div class="field"><label for="loginPassword">Password *</label><input id="loginPassword"
+                        type="password" required autocomplete="current-password" placeholder="Enter password"><small
+                        class="error"></small></div>
+                <div class="login-options"><label class="checkbox-line"><input type="checkbox"
+                            id="remember"><span>Remember me</span></label><a href="forgot-password.html">Forgot
+                        password?</a></div><button class="button button-gold button-full" type="submit">Sign in
+                    ↗</button>
+                <div id="loginMessage" class="inline-message" role="status"></div>
+            </form>
+            <p class="auth-switch">New to Aurelia? <a href="register.html">Create an account</a></p>
+            <p class="form-disclaimer">Academic demo only. Credentials are stored in local browser storage, not a secure
+                server.</p>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-effects.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

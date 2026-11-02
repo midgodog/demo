@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooms & Suites | Aurelia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="announcement">A QUIETER KIND OF LUXURY <span>✦</span> YOUR PRIVATE ESCAPE AWAITS</div>
+  <header class="site-header"><a class="brand" href="index.html"><span
+        class="brand-mark">A</span><span><strong>AURELIA</strong><small>GRAND RESORT</small></span></a><button
+      class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="main-nav" id="mainNav"><a href="index.html">Home</a><a href="about.html">Our Story</a><a class="active"
+        href="rooms.html">Rooms & Suites</a><a href="facilities.html">Experiences</a><a
+        href="index.html#contact">Contact</a><a class="nav-login" href="login.html">Sign In ↗</a><a
+        class="button button-gold nav-book" href="booking.html">Book a Stay</a></nav>
+  </header>
+  <main>
+    <section class="page-hero rooms-hero">
+      <div>
+        <p class="eyebrow light">REST, REIMAGINED</p>
+        <h1>Find your<br><em>perfect stay.</em></h1>
+        <p>Spaces shaped by calm, comfort and the quiet details that make all the difference.</p>
+      </div>
+    </section>
+    <section class="section room-list-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2>Rooms & <em>suites.</em></h2>
+        </div>
+        <p class="muted">Choose the stay that feels like you.</p>
+      </div>
+      <div class="room-filters" aria-label="Filter rooms">
+        <label class="room-search-label" for="roomSearch">FIND YOUR ROOM</label>
+        <input id="roomSearch" type="search" placeholder="Search rooms, views or amenities..."
+          aria-label="Search rooms">
+        <label class="room-search-label" for="roomPriceFilter">MAXIMUM PRICE / NIGHT</label>
+        <select id="roomPriceFilter" aria-label="Filter rooms by maximum nightly price">
+          <option value="999999">Any price</option>
+          <option value="7000">Up to ₹7,000</option>
+          <option value="10000">Up to ₹10,000</option>
+          <option value="20000">Up to ₹20,000</option>
+        </select>
+        <button type="button" id="clearRoomFilters" class="button button-outline-dark">Clear filters</button>
+        <p id="roomFilterStatus" class="muted" aria-live="polite">Showing all 3 room types.</p>
+      </div>
+      <div class="room-list-card" id="deluxe" data-room-search="deluxe retreat garden king bed garden view free wi-fi"
+        data-price="6500"><img
+          src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1100&q=85"
+          alt="Deluxe Retreat room">
+        <div class="room-list-copy">
+          <p class="eyebrow">01 / GARDEN WING</p>
+          <h3>Deluxe Retreat</h3>
+          <p>A serene hideaway with soft textures, a generous king bed and peaceful garden views.</p>
+          <div class="amenities"><span>King bed</span><span>2 guests</span><span>Garden view</span><span>Free
+              Wi-Fi</span></div>
+          <div class="room-list-bottom"><strong>₹6,500 <small>/ night</small></strong><a class="button button-dark"
+              href="booking.html?room=Deluxe%20Retreat">Book this room ↗</a></div>
+        </div>
+      </div>
+      <div class="room-list-card" id="premier" data-room-search="premier suite pool king bed pool view breakfast"
+        data-price="9800"><img
+          src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1100&q=85"
+          alt="Premier Suite room">
+        <div class="room-list-copy">
+          <p class="eyebrow">02 / POOL WING</p>
+          <h3>Premier Suite</h3>
+          <p>Room to unwind, a private sitting area and calming views over the resort pool.</p>
+          <div class="amenities"><span>King bed</span><span>3 guests</span><span>Pool view</span><span>Breakfast
+              included</span></div>
+          <div class="room-list-bottom"><strong>₹9,800 <small>/ night</small></strong><a class="button button-dark"
+              href="booking.html?room=Premier%20Suite">Book this room ↗</a></div>
+        </div>
+      </div>
+      <div class="room-list-card" id="villa" data-room-search="signature villa private pool two bedrooms butler service"
+        data-price="18500"><img
+          src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1100&q=85"
+          alt="Signature Villa">
+        <div class="room-list-copy">
+          <p class="eyebrow">03 / PRIVATE ESTATE</p>
+          <h3>Signature Villa</h3>
+          <p>Your own world of space and privacy, complete with two bedrooms and a plunge pool.</p>
+          <div class="amenities"><span>2 bedrooms</span><span>5 guests</span><span>Private pool</span><span>Butler
+              service</span></div>
+          <div class="room-list-bottom"><strong>₹18,500 <small>/ night</small></strong><a class="button button-dark"
+              href="booking.html?room=Signature%20Villa">Book this room ↗</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span
+        class="brand-mark">A</span><span><strong>AURELIA</strong><small>GRAND RESORT</small></span></a>
+    <p>AN ESCAPE, BEAUTIFULLY CONSIDERED.</p>
+    <div><a href="index.html">Home</a><a href="booking.html">Bookings</a><a href="login.html">Account</a></div><small>©
+      <span id="year"></span> Aurelia Grand Resort · BCA II Front-End Project</small>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-effects.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

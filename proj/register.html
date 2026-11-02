@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Aurelia</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-body">
+    <div class="auth-visual"><a class="brand brand-light" href="index.html"><span
+                class="brand-mark">A</span><span><strong>AURELIA</strong><small>GRAND RESORT</small></span></a>
+        <div>
+            <p class="eyebrow light">YOUR PRIVATE SANCTUARY</p>
+            <h1>Come as you are.<br><em>Stay awhile.</em></h1>
+            <p>Make your next escape a little more personal.</p>
+        </div><span class="auth-caption">AURELIA · AN ESCAPE, BEAUTIFULLY CONSIDERED</span>
+    </div>
+    <main class="auth-content"><a class="back-link" href="index.html">← Back to home</a>
+        <div class="auth-form-wrap">
+            <p class="eyebrow">JOIN AURELIA</p>
+            <h2>Create your<br><em>account.</em></h2>
+            <p class="auth-subtitle">Save your details for a smoother booking experience.</p>
+            <form id="registerForm" novalidate>
+                <div class="field"><label for="name">Full name *</label><input id="name" required minlength="2"
+                        placeholder="Your full name"><small class="error"></small></div>
+                <div class="field"><label for="regEmail">Email address *</label><input id="regEmail" type="email"
+                        required placeholder="you@example.com"><small class="error"></small></div>
+                <div class="field"><label for="regMobile">Mobile number *</label><input id="regMobile"
+                        inputmode="numeric" maxlength="10" pattern="[0-9]{10}" required
+                        placeholder="10-digit mobile number"><small class="error"></small></div>
+                <div class="field"><label for="username">Username *</label><input id="username" required minlength="3"
+                        placeholder="Choose a username"><small class="error"></small></div>
+                <div class="field"><label for="password">Password *</label><input id="password" type="password" required
+                        minlength="6" placeholder="At least 6 characters"><small class="error"></small></div>
+                <div class="field"><label for="confirmPassword">Confirm password *</label><input id="confirmPassword"
+                        type="password" required placeholder="Repeat your password"><small class="error"></small></div>
+                <button class="button button-gold button-full" type="submit">Create account ↗</button>
+                <p class="form-disclaimer">Demo account data is stored locally in this browser only. Do not use a real
+                    password.</p>
+            </form>
+            <p class="auth-switch">Already registered? <a href="login.html">Sign in</a></p>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-effects.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>
